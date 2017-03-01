@@ -8,14 +8,16 @@
 
 >引用
 
-***分割线
+***
+- - -
+分割线
 
 <img src="https://camo.githubusercontent.com/dfb04ad1700b3cdeda8ebd7513ebb54e26f16bda/68747470733a2f2f7365676d656e746661756c742e636f6d2f696d672f625671564574">
 
 
 
-<code>
-	function getCookie (name) {
+
+<pre><code>function getCookie (name) {
 		var arr = document.cookie.split('; ');
 		for (var i = 0; i < arr.length; i++) {
 			var arr2 = arr[i].split('=');
@@ -25,7 +27,7 @@
 		}
 		return '';
 	}
-</code>
+</code></pre>
 
 英文版暂停更新。
 
