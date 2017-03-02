@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="https://min1214821.github.io/about/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Github教程</title>
+<meta name="description" content="galan99的个人博客">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="./css/base.css">
+<style type="text/css">
+.wrapper{max-width: calc(1340px - (30px * 2));margin:0 auto 100px;padding-right:30px;padding-left:30px;}
+h3{color:#000;font-size:42px;line-height:1.5;text-transform:capitalize;}
+a{color: #4078c0;}
+a:hover{text-decoration:underline;}
+header{margin-bottom:30px;}
+time{font-size:14px;color:#828282;}
+p{color:#222222;margin-bottom:1em;font-size:16px;line-height:1.9;}
+img{border: 1px solid #e9e9e9;margin:20px auto;vertical-align: middle;display:block;}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h3>Github搭建网站教程</h3>
+            <time>2017.03.02</time>
+        </header>
+        <p>github pages是用来搭建免费的，不限流量的个人网站，可以把自己的东西托管在二级域名 *.github.io 下，本教程就是来简单的说明github pages的使用。</p>
+        <p>友情链接：</p>
+        <p><a href="https://pages.github.com/">github pages 官网</a>，英文网站。</p>
+        <p><a href="http://www.bootcss.com/p/git-guide/">git简易指南</a>，git的使用简单教程。</p>
+        <p><a href="http://git-scm.com/downloads">git bash下载</a>，git bash的下载地址。</p>
+        <p>在看本教程前，英文水平OK的可以看看github pages的官网，另外教程中不会涉及github的使用说明，可以在上面的git简明指南中查看，所以默认你是会使用git的。</p>
+        <p>首先，进入<a href="https://github.com/">github.com</a>，登陆以后进入到自己的个人空间，点击 Repositories ，选择 new ，创建新的git仓库。如下图所示：</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/1.png" /></p>
+        <p>之后这一步很重要，创建的仓库的名字一定要是 yourname.github.io 的格式，前面是你自己的github名字。接下来可以选择下面的”initialize this repository with a readme”，创建原始的readme，最后选择 “create repository”，创建仓库即可 。如下图，由于我已经创建过这个 域名了，所以提示我这个仓库名已经存在。</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/2.png" /></p>
+        <p>创建成功以后，会进入到自己的仓库的主页，接下来我们选择上边sidebar里面的 “settings” 选项。如下图所示，当然刚创建成功的话，仓库里面只有Readme.md一个文件。（接下来用另外一个github的账号about来说明好了）</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/3.png" /></p>
+        <p>我们进入到settings界面以后，滚动到下面的Github Pages栏。点击 “Choose a theme” 按钮。如下图所示：</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/4.png" /></p>
+        <p>之后任意选择一个模板，点击“Select theme”按钮，你的个人网站域名就生成了。如下图：</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/5.png" /></p>
+        <p>等两三分钟，下面就是我们原始的github pages首页了。如下图：</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/6.png" /></p>
+        <hr />
+        <p style="text-align:center;font-size:20px;">结束！</p>
+        <div style="display:none;">
+            <p>按照这个<a href="https://cody1991.github.io/github/2015/04/04/github-pages-introduction.html">教程</a>来的</p>
+            <p>那么问题来了！。。华丽的分割线</p>
+            <p>我们当然不止只有一个仓库，如果我们有其他的项目仓库也希望能挂在github pages上面呢。比如下面这个：</p>
+            <p><img src="https://cody1991.github.io/source/2014.11.07/9.png" /></p>
+            <p>其实和创建前面的步骤差不多，但是如上图所示，这个时候我们可以任意定义我们的仓库名字了，创建成功之后还是进入到 “settings部分”，选择上面提到的 Automatic page generator 按钮 。在网站成功创建以后，这里有个问题就需要特别注意了：分支。
+            在上面创建的网站，生成以后的文件默认是放在 master 分支里面的，而在以后的仓库的网站生成以后，放的地方是在 gh-pages 里面的，所以我们需要到 “setting” 里面设置我们的默认仓库是 gh-pages。如图：</p>
+            <p><img src="https://cody1991.github.io/source/2014.11.07/10.png" /></p>
+            <p>回到仓库首页以后，可以看到 commit ‘ create gh-pages branch via github’，这个就是原始的分支文件。接下来的事情就是把我们这个仓库 git clone 到本地了。（这一步就不赘述了，相信看了前面友情提示下的git简易教程，你是会的）</p>
+            <p><img src="https://cody1991.github.io/source/2014.11.07/11.png" /></p>
+            <p>然后我们进入到我们的目录中，比较暴力的我就把原本的文件全部删掉，然后放进了我自己的文件。当然不能删掉里面的.git文件夹了。</p>
+            <p><img src="https://cody1991.github.io/source/2014.11.07/12.png" /></p>
+            <p>之后在git bash中提交就完成了。上图涉及到的文件是我的项目<a href="http://cody1991.github.io/fullpage">fullpage</a>的文件，可以点击这里查看。这样就大功告成了！如今访问，例如 <a href="http://cody1991.github.io/fullpage">http://cody1991.github.io/fullpage</a> 或者 <a href="http://cody1991.github.io/">http://cody1991.github.io/</a> 都可以了。另外想要搭建像我这样的一个github pages jekyll博客的话，可以访问它的主页<a href="http://jekyllrb.com/">jekyll 主页</a>或者<a href="http://jekyllcn.com/">jekyll 中文网站</a>。我自己这个jekyll网页还很丑。。基本没有美化 ╮(╯_╰)╭ 是它原本的样式。</p>
+            <p><img src="https://cody1991.github.io/source/2014.11.07/13.png" /></p>
+        </div>
+    </div>
+</body>
+</html>
