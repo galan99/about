@@ -1,12 +1,10 @@
-# 这是 H1 #
+## 个人主页
+[个人主页](https://galan99.github.io/about)
 
-## 这是 H2 ##
+ 
 
-### 这是 H3 ######
-
-在线地址：<a href="https://galan99.github.io/about">https://galan99.github.io/about</a>
-
- [个人主页](https://galan99.github.io/about)
+## github搭建网站教程
+[github搭建网站教程](https://galan99.github.io/about/learn.html)
 
 >引用
 
