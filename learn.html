@@ -66,11 +66,13 @@ pre{display:block;padding:9.5px;margin: 0 0 10px;font-size:13px;line-height: 1.4
         <p><pre>$ git clone https://github.com/galan99/haha.git</pre></p>   
         <p><img src="http://192.168.116.61/demo/github/about/images/learn/9.png" /></p>
         <p>提交、上传,接下来在本地仓库里添加一些文件，比如README，</p>
-        <p><pre>$ git add -i</pre></p>
+        <p><pre>$ git add -A</pre></p>
         <p><pre>$ git commit -m "first commit"</pre></p>
         <p>上传到github：</p>
         <p><pre>$ git push origin master</pre></p>
-        <p>这一步，产生了一些错误:</p>
+        <p>输入指令成功如下图</p>
+        <p><img src="http://192.168.116.61/demo/github/about/images/learn/10.png" /></p>
+        <p>如果这一步，产生了一些错误:</p>
         <p><pre>To git@github.com:lzjun/test.git ! [rejected] master -> master (non-fast-forward) error: failed to push some refs to 'git@github.com:lzjun/test.git' To prevent you from losing history, non-fast-forward updates were rejected Merge the remote changes (e.g. 'git pull') before pushing again. See the 'Note about fast-forwards' section of 'git push --help' for details.</pre></p>
         <p>可以先pull，同步一下代码：</p>
         <p><pre>git pull git@github.com:lzjun/importnewstat.git master</pre></p>
@@ -78,7 +80,7 @@ pre{display:block;padding:9.5px;margin: 0 0 10px;font-size:13px;line-height: 1.4
         <p>git pull命令则相反。</p>
         <p>修改完代码后，使用git status可以查看文件的差别，使用git add 添加要commit的文件，也可以用git add -i来智能添加文件。之后git commit提交本次修改，git push上传到github。</p>
 
-        <h3>解决向github提交代码是老要输入用户名密码</h3>
+        <h3>解决github提交代码一直输入用户名密码</h3>
         <p>在git工具命令行输入命令:"git config --global credential.helper store",这一步会在用户目录下的.gitconfig文件最后添加</p>
 
         <p style="text-align:center;font-size:20px;">结束！</p>
