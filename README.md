@@ -1,5 +1,5 @@
 ## 个人主页
-[个人主页](https://galan99.github.io/about)
+[个人主页](https://galan99.github.io/)
 
  
 
