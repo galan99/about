@@ -16,10 +16,6 @@
 - - -
 分割线
 
-![](https://camo.githubusercontent.com/dfb04ad1700b3cdeda8ebd7513ebb54e26f16bda/68747470733a2f2f7365676d656e746661756c742e636f6d2f696d672f625671564574)
-<img src="https://camo.githubusercontent.com/dfb04ad1700b3cdeda8ebd7513ebb54e26f16bda/68747470733a2f2f7365676d656e746661756c742e636f6d2f696d672f625671564574">
-
-
 
 
 <pre><code>function getCookie (name) {
